@@ -38,7 +38,8 @@ It looks like a portion of [MSRA corpus](http://sighan.cs.uchicago.edu/bakeoff20
      姚明 出生 于 中国 上海
      毛泽东 曾经 在 上海 搞 事情 。 邓小平 在 深圳 搞 改革 。
    - 断句说明：
-     断句符号：punctuations = [',', '，', '。', '?', '？', '!', '！', '：', ';', '；']， 可以修改data.py来增删符号
+       断句符号：punctuations = [',', '，', '。', '?', '？', '!', '！', '：', ';', '；']
+       可以在data.py中修改，来增删符号
 
   * 依赖词典数据
    - 数据路径：data_path/dict/
@@ -51,6 +52,11 @@ It looks like a portion of [MSRA corpus](http://sighan.cs.uchicago.edu/bakeoff20
        char_seq: ['毛', '泽', '东', '出', '生', '于', '中', '国', '青', '海']
        人名: 泽东            <===‘人名’就是字典名称
        地名: 中国, 青海      <===‘地名’也是字典名称
+
+  * 句子长度说明
+   - 默认设置句子最大长度
+       max_len = 200 #句子最大长度（字数）
+       可在data.py中修改该值
 
 
 ### test
